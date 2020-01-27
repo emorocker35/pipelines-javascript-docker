@@ -16,7 +16,7 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      echo "Sp id: $servicePrincipalId, tenant: $tenantId, key: $servicePrincipalKey"
-      az account show
-      echo listing repos..
+# echo "Sp id: $servicePrincipalId, tenant: $tenantId, key: $servicePrincipalKey"
+# az account show
+# echo listing repos..
       az acr repository list --name $(acrregistry)
