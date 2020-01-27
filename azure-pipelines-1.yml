@@ -15,7 +15,7 @@ steps:
     azureSubscription: 'wip_cmx_kev'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: |
+    inlineScript: 
 # echo "Sp id: $servicePrincipalId, tenant: $tenantId, key: $servicePrincipalKey"
 # az account show
 # echo listing repos..
