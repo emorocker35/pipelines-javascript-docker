@@ -11,12 +11,8 @@ steps:
   displayName: Docker Image SHA
   name: getImageSha
   inputs:
-    addSpnToEnvironment: true
     azureSubscription: 'wip_cmx_kev'
-    scriptType: 'bash'
+    scriptType: 'batch'
     scriptLocation: 'inlineScript'
-    inlineScript: 
-# echo "Sp id: $servicePrincipalId, tenant: $tenantId, key: $servicePrincipalKey"
-# az account show
-# echo listing repos..
-      az acr repository list --name $(acrregistry)
+    inlineScript: 'az acr repository list --name $(acrregistry)'
+    addSpnToEnvironment: true
